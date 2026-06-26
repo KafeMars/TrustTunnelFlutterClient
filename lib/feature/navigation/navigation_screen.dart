@@ -100,7 +100,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     onPopWithResult: (_) => _navigatorKey.currentState!.maybePop(),
     child: Navigator(
       key: _navigatorKey,
-      onGenerateInitialRoutes: (_, __) => [
+      onGenerateInitialRoutes: (_, _) => [
         PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => const ServersScreen(),
           transitionDuration: Duration.zero,
